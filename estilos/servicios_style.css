@@ -1,0 +1,51 @@
+.servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.servicios h1{
+    color:rgb(114, 56, 9);
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.servicios p{
+    color:#2229;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+#Servicios{
+    height: 100%;
+}
+
+#Servicios .container-card{
+    row-gap: 20px;
+    column-gap: 10px;
+    padding:10px 0;
+}
+
+@media screen and (max-width: 800px){
+    #Servicios .container-card{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 10px;
+        padding:10px 0;
+    }
+}
+
+@media screen and (max-width: 520px){
+    #Servicios .container-card{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 10px;
+        padding:10px 0;
+    }
+}
